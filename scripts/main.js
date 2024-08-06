@@ -171,7 +171,7 @@ function getUpdateRemain(eo, m, s) {
                 var sec = sec - hour * 60 * 60;
                 var min = parseInt(sec / 60);
                 sec = parseInt(sec - min * 60);
-                return min + " Phút " + sec +  " Giây Còn Lại";
+                return min + " Phút " + sec +  " Giây";
             } else {
                 return "-";
             }
@@ -192,7 +192,7 @@ function getUpdateRemain(eo, m, s) {
                 var sec = sec - hour * 60 * 60;
                 var min = parseInt(sec / 60);
                 sec = parseInt(sec - min * 60);
-                return min + " Phút " + sec +  " Giây Còn Lại";
+                return min + " Phút " + sec +  " Giây";
             } else {
                 return "-";
             }
