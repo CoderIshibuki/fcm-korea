@@ -1,0 +1,48 @@
+<html>
+    <head>
+        <title>ResetTime FC Mobile</title>
+        <link rel = "icon" href = 
+              icon.ico type = "image/x-icon">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta property="og:title" content="ResetTime FCM">
+        <meta property="og:description" content="Thông tin cập nhật thị trường chuyển nhượng FC Mobile">
+        <script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+        <script src = "https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+        <link href='https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css' rel="stylesheet" />
+        <link rel="stylesheet" href="styles.css">
+        <script src="./scripts/main.js" defer></script>
+        <script>
+            $(document).ready(function(){
+                $(document).bind('keydown',function(e){
+                    if ( e.keyCode == 123) {
+                        e.preventDefault();
+                        e.returnValue = false;
+                    }
+                });
+            });
+        </script>
+    </head>
+    <body oncontextmenu="return false" ondragstart="return false" onselectstart="return false">
+
+        <h5>Website đang trong quá trình phát triển, trông có hơi bẩn mong các bác thông cảm</h5>
+        <h5>Ủng hộ em cốc cà phê tại MBBank: 6999927092007 (Trần Vũ Hòa Phát) </h5>
+        <div class="main-content">
+            <div class="inputs">
+                <input type="text" class="form-control" id="inputTxt" placeholder="Nhập tên mùa thẻ" onkeypress="checkEnter();" />
+                <input type="button" class="btn btn-primary adder" id="btnSearch" value="Tìm" onclick="searchSeason();"/>
+            </div>
+            <div class="div-list">
+                <table class="card-table">
+                    <tr>
+                        <th scope="col">THẺ</th>
+                        <th scope="col">MÙA</th>
+                        <th scope="col">THỜI GIAN CẬP NHẬT</th>
+                        <th scope="col">THỜI GIAN CÒN LẠI</th>
+                    </tr>
+                </table>
+            </div>
+        </div>
+
+    </body>
+</html>
